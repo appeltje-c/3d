@@ -1,2 +1,1 @@
-# 3d
-3d study 
+# Appeltje-C | 3D Studio
