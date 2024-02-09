@@ -10,7 +10,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     /* Bundler mode */
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -46,7 +46,8 @@
       "@utils": [
         "src/utils"
       ]
-    }
+    },
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src"
