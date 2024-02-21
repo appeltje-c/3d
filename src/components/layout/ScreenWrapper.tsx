@@ -14,7 +14,7 @@ export default function ScreenWrapper({children}: any) {
         // @ts-ignore
         <Box>
             <Drawer
-                variant="permanent"
+                variant={'permanent'}
                 sx={{
                     width: drawerWidth,
                     flexShrink: 0,
@@ -24,13 +24,12 @@ export default function ScreenWrapper({children}: any) {
 
                     <Divider sx={{pt: 5}}/>
                     <List>
-                        <DrawerLink path={Screen.Basic} title={`Basic`}/>
+                        <DrawerLink path={Screen.Shapes} title={'Shapes'}/>
                     </List>
 
                 </Box>
             </Drawer>
             <Box component="main" sx={{height: '100vh'}}>
-                <Toolbar/>
                 {children}
             </Box>
         </Box>

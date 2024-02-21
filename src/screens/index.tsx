@@ -4,14 +4,14 @@ import {Navigate, Route, Routes} from 'react-router-dom'
 import ScreenWrapper from '@components/layout/ScreenWrapper'
 import Screen = Studio.Screen;
 
-const Basic = lazy(() => import('./basic'))
+const Shapes = lazy(() => import('./shapes'))
 
 const load = (component: ReactElement) => {
     return (<Suspense>{component}</Suspense>)
 }
 
 const screens: { [index: string]: ReactElement } = {
-    [Screen.Basic]: load(<Basic/>)
+    [Screen.Shapes]: load(<Shapes/>)
 }
 
 const Screens = () => {
@@ -19,7 +19,7 @@ const Screens = () => {
     const screenKeys: string[] = Object.keys(screens)
 
     const getDefaultScreen = () => {
-        return (<Route path="*" element={<Navigate to={Screen.Basic} replace/>}/>)
+        return (<Route path="*" element={<Navigate to={Screen.Shapes} replace/>}/>)
     }
 
     return (

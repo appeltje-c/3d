@@ -3,6 +3,7 @@
 
 ## Wishlist
 
+- show wireframe 
 - How does matrix copy etc works
 - Inverse kinematics
 

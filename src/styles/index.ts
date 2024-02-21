@@ -19,16 +19,15 @@ const options: ThemeOptions = {
             divider: '#292D3A'
         }),
         primary: {
-            main: '#64b5f6',
+            main: '#140d9a'
         },
         secondary: {
-            main: '#76ff03',
+            main: '#721eb1'
         },
     },
     typography: {
-        fontFamily: ['Outfit Variable'].join(','),
+        fontFamily: ['Outfit Variable'].join(',')
     }
 }
 
 export default responsiveFontSizes(createTheme(options))
-

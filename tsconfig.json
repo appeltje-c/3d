@@ -26,25 +26,25 @@
         "src/assets"
       ],
       "@components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@features": [
-        "src/features"
+        "./src/features"
       ],
       "@language": [
-        "src/language"
+        "./src/language"
       ],
       "@screens": [
-        "src/screens"
+        "./src/screens"
       ],
       "@styles": [
-        "src/styles"
+        "./src/styles"
       ],
       "@types": [
-        "src/types"
+        "./src/types"
       ],
       "@utils": [
-        "src/utils"
+        "./src/utils"
       ]
     },
     "allowSyntheticDefaultImports": true
