@@ -5,13 +5,17 @@ import ScreenWrapper from '@components/layout/ScreenWrapper'
 import Screen = Studio.Screen;
 
 const Shapes = lazy(() => import('./shapes'))
+const Scan = lazy(() => import('./scan'))
+const Loader = lazy(() => import('./loader'))
 
 const load = (component: ReactElement) => {
     return (<Suspense>{component}</Suspense>)
 }
 
 const screens: { [index: string]: ReactElement } = {
-    [Screen.Shapes]: load(<Shapes/>)
+    [Screen.Shapes]: load(<Shapes/>),
+    [Screen.Scan]: load(<Scan/>),
+    [Screen.Loader]: load(<Loader/>)
 }
 
 const Screens = () => {

@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
-import Toolbar from '@mui/material/Toolbar'
 import {List, Divider} from '@mui/material'
 import DrawerLink from '@components/navigation/DrawerLink.tsx'
 import {Studio} from '@types'
@@ -21,15 +20,16 @@ export default function ScreenWrapper({children}: any) {
                     [`& .MuiDrawer-paper`]: {width: drawerWidth, boxSizing: 'border-box'},
                 }}>
                 <Box>
-
                     <Divider sx={{pt: 5}}/>
                     <List>
                         <DrawerLink path={Screen.Shapes} title={'Shapes'}/>
+                        <DrawerLink path={Screen.Scan} title={'Scan'}/>
+                        <DrawerLink path={Screen.Loader} title={'Loader'}/>
                     </List>
 
                 </Box>
             </Drawer>
-            <Box component="main" sx={{height: '100vh'}}>
+            <Box component="main" sx={{height: '100vh', marginLeft: 30}}>
                 {children}
             </Box>
         </Box>

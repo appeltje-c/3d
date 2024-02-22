@@ -9,8 +9,6 @@ function SpinningMesh(props: any) {
 
     const handleSelection = () => {
         setSelected(!selected)
-
-        console.info()
     }
 
     return (

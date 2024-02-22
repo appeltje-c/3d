@@ -1,4 +1,4 @@
-import { Canvas } from '@react-three/fiber'
+import {Canvas, useFrame} from '@react-three/fiber'
 import { GizmoHelper, GizmoViewport, OrbitControls } from '@react-three/drei'
 import Box from './Box.tsx'
 import { Perf } from 'r3f-perf'
@@ -32,7 +32,7 @@ const Shapes = () => {
 
         const ref = useRef(null!)
         // @ts-ignore
-        //useFrame(() => (ref.current.rotation.x = ref.current.rotation.y = ref.current.rotation.z += 0.01))
+        useFrame(() => (ref.current.rotation.x = ref.current.rotation.y = ref.current.rotation.z += 0.01))
 
         return (
             <group ref={ref}>

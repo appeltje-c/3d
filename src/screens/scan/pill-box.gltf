@@ -1,0 +1,223 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_specular",
+    "KHR_materials_ior"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "pillbox"
+    },
+    {
+      "mesh": 1,
+      "name": "Blister"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      },
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 118,
+      "max": [
+        0.617745578289032,
+        0.8659020662307739,
+        0.23633284866809845
+      ],
+      "min": [
+        -0.6665270924568176,
+        -1.4797747135162354,
+        -0.2540439963340759
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 180,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 29701,
+      "max": [
+        0.5044904351234436,
+        1.2887096405029297,
+        0.21548499166965485
+      ],
+      "min": [
+        -0.4606297016143799,
+        -1.4572906494140625,
+        -0.17791998386383057
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 29701,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 29701,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 78768,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1416,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1416,
+      "byteOffset": 1416,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 944,
+      "byteOffset": 2832,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 360,
+      "byteOffset": 3776,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 356412,
+      "byteOffset": 4136,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 356412,
+      "byteOffset": 360548,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 237608,
+      "byteOffset": 716960,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 157536,
+      "byteOffset": 954568,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "pill-box_data.bin",
+      "byteLength": 1112104
+    }
+  ]
+}

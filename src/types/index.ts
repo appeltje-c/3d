@@ -1,7 +1,9 @@
 export namespace Studio {
 
     export enum Screen {
-        Shapes = '/shapes'
+        Shapes = '/shapes',
+        Scan = '/scan',
+        Loader = '/loader'
     }
 
 }

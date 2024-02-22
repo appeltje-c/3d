@@ -22,17 +22,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@assets": [
-        "src/assets"
-      ],
       "@components/*": [
         "./src/components/*"
-      ],
-      "@features": [
-        "./src/features"
-      ],
-      "@language": [
-        "./src/language"
       ],
       "@screens": [
         "./src/screens"
