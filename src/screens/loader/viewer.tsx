@@ -16,7 +16,7 @@ const Viewer = ({scene}: any) => {
     return (
         <Canvas gl={{preserveDrawingBuffer: true}}
                 shadows={true} dpr={[1, 1.5]}
-                camera={{position: [0, 0, 150], fov: 50}} style={{height: '100vh', width: '100vw'}}>
+                camera={{position: [0, 0, 150], fov: 50}} >
             <ambientLight intensity={0.25}/>
             <Suspense fallback={null}>
                 <Stage

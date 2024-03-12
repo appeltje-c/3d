@@ -45,7 +45,7 @@ function Loader() {
               alignItems={'center'}
               sx={{minHeight: '80vh'}}>
 
-            <Grid item>
+            <Grid item sx={{width: 600, height: 600, border: '1px solid red'}}>
 
                 {
                     !scene &&

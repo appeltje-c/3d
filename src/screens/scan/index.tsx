@@ -1,11 +1,15 @@
-import BarcodeScanner from '@components/media/BarcodeScanner.tsx'
-import {Canvas, useFrame} from "@react-three/fiber";
+import BarcodeScanner from '@components/media/BarcodeScanner'
+import {Canvas, useFrame} from "@react-three/fiber"
 import {Perf} from "r3f-perf";
-import {OrbitControls} from "@react-three/drei";
-import {Pillbox} from "./Pillbox.tsx";
-import {useRef} from "react";
+import {OrbitControls} from "@react-three/drei"
+import {useRef} from "react"
+import {Pillbox} from "./products/Pillbox"
 
 function Scan() {
+
+    const ean = {
+        "7896422504911": "Pillbox"
+    }
 
     function Rotate({children}: any) {
 
@@ -24,8 +28,9 @@ function Scan() {
         <>
             <BarcodeScanner
                 onUpdate={result => {
+                    // @ts-ignore
+                    const ProductToRender = Products[ean[result.getText()]]
 
-                    console.info(result)
 
                 }}
             />

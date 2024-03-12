@@ -42,14 +42,11 @@ const BarcodeScanner = ({
 
     return (
         <Webcam
-            style={{marginLeft: 400}}
-            width={200}
+            width={300}
             height={100}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             videoConstraints={{
-                width: 200,
-                height: 100,
                 facingMode: 'environment'
             }}
             audio={false}
